@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFF4E4;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .row {
+    margin-top: 100px;
+}
+
+.text-header1 {
+    line-height: 50px;
+}
+
+.text-header2 {
+    line-height: 50px;
+    margin-bottom: 15px;
+    color: #F7941D;
+}
+
+.submit {
+    margin-top: 50px;
+}
+
+.submit .button {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 2px solid #F7941D;
+    background: #F7941D;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.0231px;
+    line-height: 46px;
+    letter-spacing: 0.005em;
+    margin-left: 14px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+span {
+    background: #F7941D;
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.submit .button:hover span {
+    width: 100%;
+}
+
+.submit .button:hover {
+    border: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width:1023px) {
+    .form_sale {
+        float: left;
+    }
+}

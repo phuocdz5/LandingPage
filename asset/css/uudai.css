@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.title-form {
+    color: #4D7E74;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/* Customize the countdown timer */
+
+.uudai {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p#demo {
+    font-size: 1rem;
+    background: rgb(255, 203, 69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.form_sale {
+    width: 60%;
+    margin-left: 36%;
+    margin-top: -41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1300px) {
+    .form_sale {
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media (max-width: 790px) {
+    .uudai {
+        width: 79%;
+        margin: 30px auto 0 auto;
+    }
+}
+

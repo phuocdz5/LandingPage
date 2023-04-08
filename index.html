@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/Libary-Grid.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/uudai.css">
+    <link rel="stylesheet" href="./asset/css/nav.css">
+    <link rel="stylesheet" href="./asset/css/section.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="#"><img src="./asset/img/Logo.png" alt="logoPolytechnic"></a>
+            </li>
+            <li class="item"><a href="#">Trang Chủ</a></li>
+            <li class="item"><a href="#section-1">Đối Tượng</a></li>
+            <li class="item"><a href="#">Tiến Độ</a></li>
+            <li class="item"><a href="#">Lợi Ích</a></li>
+            <li class="item"><a href="#">Đánh Giá</a></li>
+            <li class="toggle"><span class="bars"><i class="fa-solid fa-bars"></i></span></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-6 m-12 c-12 ">
+                    <h1 class="text-header1">Muốn trở thành nhà lập trình game </h1>
+                    <h1 class="text-header2">chuyên nghiệp</h1>
+                    <p class="slogan-header">Cơ hội nghề nghiệp của ngành lập trình game sau khi ra trường là rất lớn. <br> Ngại gì mà không nhanh tay đăng ký gia nhập khóa học ngay!</p>
+                    <div class="submit">
+                        <a href="" class="button"><span></span>Nhận ưu đãi</a>
+                        <div class="form_sale">
+                            <div class="uudai">
+                                <h1 class="title-form">ƯU ĐÃI TRONG 2 <br>NGÀY DUY NHẤT</h1>
+                                <p id="demo"></p>
+                            </div>
+
+                            <script>
+                                // Set the date we're counting down to
+                                var countDownDate = new Date("April 10, 2023 00:00:00").getTime();
+
+                                // Update the count down every 1 second
+                                var x = setInterval(function() {
+
+                                    // Get the current date and time
+                                    var now = new Date().getTime();
+
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                    // Display the result in the element with id="demo"
+                                    document.getElementById("demo").innerHTML = days + " ngày " + hours + " giờ " +
+                                        minutes + " phút " + seconds + " giây ";
+
+                                    // If the count down is finished, write some text
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("demo").innerHTML = "Hết thời gian!";
+                                    }
+                                }, 1000);
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col l-6 m-0 c-0">
+                    <div class="content-right">
+                        <img src="./asset/img/coder.png" alt="" width="99%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class=" grid section-1" id="section-1">
+            <div class="content-1 grid wide">
+                <div class="row row-title">
+                    <div class="tilte col l-12 ">
+                        <h1 class="title-h1">ĐỐI TƯỢNG</h1>
+                    </div>
+                </div>
+
+                <div class="row row-3">
+                    <div class="col l-4 m-6 c-12 background-section3">
+                        <div class="container-row-3 col-section-1">
+                            <p>Tốt Nghiệp THPT Hoặc Tương Đương</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12 background-section3">
+                        <div class="container-row-3 col-section-2">
+                            <p>Sinh Viên Hệ Chính Quy Các Trường CAO ĐẲNG - ĐẠI HỌC</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12 background-section3">
+                        <div class="container-row-3 col-section-3">
+                            <p>Sinh Viên Đã Hoàn Thành Chương Trình TRUNG CẤP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" grid section-1">
+            <div class="content-1 grid wide">
+                <div class="row row-title">
+                    <div class="tilte col l-12">
+                        <h1 class="title-h1">LỘ TRÌNH</h1>
+                    </div>
+                </div>
+                <div class="row row-1">
+                    <div class=" col l-6 m-6 c-12 item-1">
+                        <img src="./asset/img/image 2.png" alt="" height="auto">
+                    </div>
+                    <div class="col l-6 m-6 c-12 item-section1">
+                        <div class="container-section1-item2 text-right">
+                            <h1>2 MĂM 4 THÁNG</h1>
+                            <h2>Học trong 7 kỳ</h2>
+                            <p>-Thời gian học sẽ được rút ngắn và đảm bảo với chất lượng <br> giáo dục mới "Thực học - Thực nghiệm"</p>
+                            <p>-Phát triển cá nhân và làm việc nhóm một cách toàn diện <br> trong môi trường lập trình Game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-2">
+                    <div class="col l-6 m-6 c-12 item-section1">
+                        <div class="container-section1-item2 text-left">
+                            <h1>ĐƯỢC TRAINING</h1>
+                            <h2>Kĩ càng về unity</h2>
+                            <p>-Cung cấp cho học viên kỹ năng lập trình <br> C# và lập trình Game với Unity Framework</p>
+                            <p>-Cung cấp các khái niệm cơ bản trong <br> Game Unity, quy trình tạo Game.</p>
+                        </div>
+                    </div>
+                    <div class=" col l-6 m-6 c-12 item-1">
+                        <img src="./asset/img/image 3.png" alt="" height="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div class="content_footer">
+                <h2>Thông Tin Liên Hệ</h2>
+                <p>137 Nguyễn Thị Thập, Thanh Khê Tây <br> Liên Chiểu, Đà Nẵng</p>
+                <p>SĐT: +84 0236 3710 999</p>
+            </div>
+            <div class="navbar_footer">
+                <div class="logo-footer">
+                    <a href="#"><img src="../Logo.png" alt="logoDNP"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Đối Tượng</a></li>
+                    <li><a href="#">Tiến Độ</a></li>
+                    <li><a href="#">Lợi Ích</a></li>
+                    <li><a href="#">Đánh Giá</a></li>
+                </ul>
+            </div>
+            <div class="social_icon_footer">
+                <a class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <hr>
+            <div class="copy-right">
+                <p>© 2023 All Rights Smart</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
